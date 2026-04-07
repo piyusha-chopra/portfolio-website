@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         {/* Right */}
         <div className='w-1/2 flex items-center justify-center'>
-          <img className='w-[450px] drop-shadow-[0_0_15px_rgba(168,85,247,0.6)]' src='src/assets/profile.svg' alt='developer'/>
+          <img className='w-[450px] drop-shadow-[0_0_15px_rgba(168,85,247,0.6)]' src='/profile.svg' alt='developer'/>
         </div>
       </div>
     </section>
