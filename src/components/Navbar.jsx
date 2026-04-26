@@ -3,23 +3,41 @@ import React from 'react'
 const Navbar = () => {
   return (
     <section id="navbar">
-        <div className='px-10 py-6'>
-            <div className='flex justify-between'>
-                <div>
-                    <h2 className='text-2xl italic font-bold bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent'>Piyusha</h2>
-                </div>
-                <div>
-                    <ul className='flex justify-between gap-10 text-[1.1rem] text-purple-400 font-semibold'>
-                        <li className='hover:text-purple-300'><a href="#home">Home</a></li>
-                        <li className='hover:text-purple-300'><a href="#about">About</a></li>
-                        <li className='hover:text-purple-300'><a href="#skills">Skills</a></li>
-                        <li className='hover:text-purple-300'><a href="#projects">Projects</a></li>
-                        <li className='bg-purple-800 text-white px-4 py-1 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_5px_rgba(37,99,235,0.6)] hover:text-purple-300'><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div className="px-10 py-6">
+
+    <div className="mx-auto flex flex-col md:flex-row items-center md:justify-between">
+
+      {/* Logo */}
+      <h2 className="text-2xl italic font-bold bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text text-transparent mb-4 md:mb-0">
+        Piyusha
+      </h2>
+
+      {/* Nav Links */}
+      <div className="w-full md:w-auto overflow-x-auto">
+        <ul className="
+          flex justify-center md:justify-end 
+          gap-4 md:gap-6 lg:gap-10 
+          text-[0.95rem] md:text-[1.05rem] 
+          text-purple-400 font-semibold
+          whitespace-nowrap
+        ">
+
+          <li className="hover:text-purple-300"><a href="#home">Home</a></li>
+          <li className="hover:text-purple-300"><a href="#about">About</a></li>
+          <li className="hover:text-purple-300"><a href="#skills">Skills</a></li>
+          <li className="hover:text-purple-300"><a href="#projects">Projects</a></li>
+
+          <li className="bg-purple-800 text-white px-4 py-1 rounded-full hover:shadow-[0_0_20px_5px_rgba(37,99,235,0.6)] hover:text-purple-300 transition">
+            <a href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
   )
 }
 
