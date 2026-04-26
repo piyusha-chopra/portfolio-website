@@ -5,7 +5,7 @@ const Projects = () => {
     <section id="projects">
       <div className='px-10 py-15'>
         <h2 className='text-3xl font-semibold text-center mb-6'>Projects</h2>
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           <div className='p-5 shadow-2xl rounded-2xl bg-white/5'>
               <h3 className='text-xl font-medium underline'>Expense Tracker</h3>
               <p className='mt-3'>A web app to manage income and expenses with real-time balance.</p>
